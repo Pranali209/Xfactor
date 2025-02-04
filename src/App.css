@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+h1 {
+    font-family: 'inter';
+}
+
+.backX {
+    position: relative;
+}
+
+.backX::before {
+    content: "";
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    height: 150lvh;
+    background-image: url('./assets/bg-x.svg');
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+   animation: borderCircle 20s linear infinite;
+    transform-origin: center;
+    background-repeat: no-repeat;
+}
+
+/* Define the circular animation to touch screen borders */
+@keyframes borderCircle {
+    0% {
+        transform: translate(0, 0) rotate(0deg) translate(10vw, 5vh) rotate(0deg);
+    }
+    25% {
+        transform: translate(0, 0) rotate(90deg) translate(10vw, 5vh) rotate(-90deg);
+    }
+    50% {
+        transform: translate(0, 0) rotate(180deg) translate(10vw, 5vh) rotate(-180deg);
+    }
+    75% {
+        transform: translate(0, 0) rotate(270deg) translate(10vw, 5vh) rotate(-270deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg) translate(10vw, 5vh) rotate(-360deg);
+    }
+}
+
+.boxShadow{
+    box-shadow: 2px 4px 20px  rgba(200, 200, 200, 1),
+    -5px -5px 10px rgba(255, 255, 255, 1); /* Adjusted box-shadow for white background */
+}
+.timeline-container {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    z-index: -1; /* Ensure the line is behind the circles */
+}
+
+.circle {
+    position: relative;
+    z-index: -1; /* Ensure the circles are above the line */
+}
+
+/* Heading slides in from the right */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Description slides in from the left */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Image slides in from the top */
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the animations */
+.slide-in-right {
+    animation: slideInRight 2s forwards;
+}
+
+.slide-in-left {
+    animation: slideInLeft 2s forwards;
+}
+
+.slide-in-top {
+    animation: slideInTop 2s forwards;
+}
+
+.btnbg{
+    background: linear-gradient(180deg, #151D26 0%, #2B3D4F 100%)
+}
+
+.rotateCircle{
+    animation: rotatebg 10s linear infinite;
+}
+
+@keyframes rotatebg{
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.rotateCircleClk{
+    animation: rotatebgclk 10s linear infinite;
+}
+
+@keyframes rotatebgclk{
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
