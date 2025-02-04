@@ -23,27 +23,8 @@ const Cards = () => {
     ];
 
     return (
-        <CardStack
-            height={500}
-            width={400}
-            background='#f8f8f8'
-            hoverOffset={25}>
-            
-                      
-                        <Card background='#f8f8f8' >
-                            <p>Revolutionizing AI for the healthcare industry, they scaled from prototype to global leader after winning X-Factor.k</p>
-                            <p>Grant Winner of ₹50L | Raised ₹15 Cr in funding | Featured in [Media Outlet]</p>
-                        </Card>
-                        <Card background='#2980B9' >
-                            <p>Revolutionizing AI for the healthcare industry, they scaled from prototype to global leader after winning X-Factor.k</p>
-                            <p>Grant Winner of ₹50L | Raised ₹15 Cr in funding | Featured in [Media Outlet]</p>
-                        </Card>
-                        <Card background='#27AE60'  >
-                            <p>Revolutionizing AI for the healthcare industry, they scaled from prototype to global leader after winning X-Factor.k</p>
-                            <p>Grant Winner of ₹50L | Raised ₹15 Cr in funding | Featured in [Media Outlet]</p>
-                        </Card>
-
-        </CardStack>
+      <>
+      </>
     );
 };
 
