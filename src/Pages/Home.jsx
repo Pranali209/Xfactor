@@ -5,8 +5,10 @@ import Wheel from '../assets/wheel.svg'
 import Header from '../Component/Headers'
 import Box from '../Component/box'
 import Footer from '../Component/Footer'
+import { Navigate, useNavigate } from 'react-router-dom'
  
 function Home() {
+  const navigate = useNavigate()
   const heroBox = [
     {
       id:1,
@@ -18,6 +20,17 @@ function Home() {
       text: 'The ultimate challenge for creators solving real-world problems.',
     }
   ]
+
+  function HandleOnclick(id) {
+
+    if(id === 1){
+      navigate('/acceration')
+    }
+    else{
+      navigate('/hackathon')
+    }
+    
+  }
   return (
     <>
  
@@ -42,7 +55,7 @@ function Home() {
          {
             heroBox.map((item) => {
               return (
-                <Box key={item.id} heading={item.title}  txt = {item.text} />
+                <Box key={item.id} heading={item.title}  txt = {item.text}  onClick={()=>HandleOnclick(item.id)}/>
               )
            })
           }
