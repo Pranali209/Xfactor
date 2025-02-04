@@ -233,7 +233,7 @@ function Hackthon() {
             <div className='flex flex-col justify-between items-center'>
             <Heading className="text-center font-medium  text-4xl text-black " as="h1" text="Meets our winners" />
             <Heading className="text-center text-lg mt-7 text-black  mx-auto mb-16" as="p" text="The Ones Who Made It Big" />
-                <Cards />
+                
             </div>
             <div className='my-20 flex flex-col justify-center items-center'>
                 <Heading className="text-center font-medium  text-4xl text-black " as="h1" text="Let’s Build Something Epic Together" />
