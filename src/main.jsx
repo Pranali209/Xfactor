@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import AboutUs from './Pages/about.jsx'
+import AboutUs from './Pages/About.jsx'
 import Acceration from './Pages/Acceration.jsx'
 import Hackthon from './Pages/Hackthon.jsx'
 
