@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import AboutUs from './Pages/About.jsx'
 import Acceration from './Pages/Acceration.jsx'
 import Hackthon from './Pages/Hackthon.jsx'
+import Form from './Component/form/index.jsx'
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,9 @@ const router = createBrowserRouter([
   },{
     path :'/hackathon',
     element: <Hackthon/>
+  },{
+    path :'/form',
+    element : <Form/>
   }
 ])
 createRoot(document.getElementById('root')).render(

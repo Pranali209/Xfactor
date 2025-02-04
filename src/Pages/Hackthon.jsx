@@ -15,7 +15,13 @@ import Feedback from '../assets/feedback.svg'
 import Confetti from '../assets/confetti.svg'
 import Button from '../Component/Button'
 import Cards from '../Component/Cards'
+
+import { useNavigate } from 'react-router-dom'
 function Hackthon() {
+ const navigate = useNavigate()
+    function handleForm(params) {
+        navigate('/form')
+    }
     const Accadata = [
         {
             id: 1,
@@ -100,7 +106,7 @@ function Hackthon() {
                     etxt="Bring your boldest ideas, build something extraordinary, and claim your spot as the next big innovator."
                     pclass="font-medium" eclass="font-normal" />
 
-                <img src={Ellipse3} alt='ellipse1' className=' absolute top-10 right-0  w-96 rotateCircle' />
+                <img src={Ellipse3} alt='ellipse1' className=' absolute top-10 right-0  w-96 bgRotate2' />
 
             </div>
             <div className='my-32 w-[60%] mx-auto'>
@@ -207,7 +213,7 @@ function Hackthon() {
                     </ul>
 
                 </div>
-                <img src={Ellipse1} alt='ellipse1' className=' absolute  -bottom-64 left-1  w-96 rotateCircleClk' />
+                <img src={Ellipse1} alt='ellipse1' className=' absolute  -bottom-64 left-1  w-96 bgRotate2' />
             </div>
 
             <div className='my-32 w-[60%] mx-auto'>
@@ -238,7 +244,7 @@ function Hackthon() {
             <div className='my-20 flex flex-col justify-center items-center'>
                 <Heading className="text-center font-medium  text-4xl text-black " as="h1" text="Let’s Build Something Epic Together" />
                 <Heading className="text-center text-lg mt-7 text-black  mx-auto" as="p" text="We believe startups like yours are the key to shaping the future. Are you ready to join the legacy?" />
-                <Button className="mt-12" txt="Apply Now" />
+                <Button className="mt-12" txt="Apply Now" onClick={handleForm} />
             </div>
            
 

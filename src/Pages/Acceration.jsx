@@ -11,13 +11,18 @@ import Button from '../Component/Button'
 import Ellipse2 from '../assets/Ellipse2.svg'
 import Ellipse1 from '../assets/Ellipse1.svg'
 import Ellipse3 from '../assets/Ellipse3.svg'
+import { useNavigate } from 'react-router-dom'
 function Acceration() {
+    const navigate = useNavigate()
     const [isclicked, setIsClicked] = useState(1)
     const [previousId, setPreviousId] = useState(null);
 
     function handleIsClicked(id) {
         setPreviousId(isclicked) 
         setIsClicked(id)
+    }
+    function handleForm(params) {
+        navigate('/form')
     }
     const Accadata = [
         {
@@ -71,7 +76,7 @@ function Acceration() {
             <div className='relative'>
             <BoxA className="mt-12 w-4xl mx-auto px-28'" htxt="Why X-Factor Acceleration?" ptxt="This is not your average accelerator. X-Factor is where visionaries meet opportunities. If your  startup has the potential to change industries and create real impact, this is where you belong"
                 etxt="We don’t just accelerate growth—we ignite transformations." pclass="text-[15px]" eclass="semibold" />
-                <img src= {Ellipse3}  alt='ellipse1' className=' absolute top-10 right-0  w-96 rotateCircle' />
+                <img src= {Ellipse3}  alt='ellipse3' className=' absolute top-10 right-0  w-96 bgRotate2' />
 
             </div>
 
@@ -134,12 +139,12 @@ function Acceration() {
                     </ul>
                     <Heading className=" text-lg mt-7 -ml-16  text-black" as="p" text="If you’re redefining what’s possible, we want you." />
                 </div>
-                <img src= {Ellipse1}  alt='ellipse1' className=' absolute  -bottom-64 left-1  w-96 rotateCircleClk' />
+                <img src= {Ellipse1}  alt='ellipse1' className=' absolute  -bottom-64 left-1 -z-10 w-96 bgRotate2' />
             </div>
 
             <div className="container relative my-28 py-16 mx-auto boxShadow rounded-4xl w-[60%]  flex flex-col justify-between items-center ">
 
-                <img src={Chain} alt="chain" className=' absolute -top-10  left-10 w-20' />
+                <img src={Chain} alt="chain" className=' absolute -top-10  left-10 w-20 ' />
                 <Heading className="text-center font-semibold  text-4xl text-black " as="h1" text= "How It Works" />
                 <Heading className="text-xl  mt-5  text-black" as="p"  text= "(Don't Worry, It's Simple)" />
                 <ol className="list-decimal  mt-10 ">
@@ -175,8 +180,8 @@ function Acceration() {
             <Heading className="text-center -ml-7 text-[19px] mt-10 text-black" as="p" text="The X-Factor Acceleration Program is built for startups like yours. Take the leap today" />
             <div className='my-14 flex  justify-center'>
             <Button className="mr-5" txt= "Learn More"/>
-            <Button txt= "Apply Now"/>
-            <img src= {Ellipse2}  alt='ellipse1' className=' absolute  -bottom-36 -right-[19rem]  w-96 rotateCircleClk' />
+            <Button txt= "Apply Now" onClick={handleForm}/>
+            <img src= {Ellipse2}  alt='ellipse2' className=' absolute  -bottom-36 -right-[19rem]  w-96 rotateCircleClk' />
             </div>
             </div>
         </div>
