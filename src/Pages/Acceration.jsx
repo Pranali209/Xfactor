@@ -24,6 +24,9 @@ function Acceration() {
     function handleForm(params) {
         navigate('/form')
     }
+    function handleArtcile(params) {
+        navigate('/article')
+    }
     const Accadata = [
         {
             id: 1,
@@ -179,7 +182,7 @@ function Acceration() {
 
             <Heading className="text-center -ml-7 text-[19px] mt-10 text-black" as="p" text="The X-Factor Acceleration Program is built for startups like yours. Take the leap today" />
             <div className='my-14 flex  justify-center'>
-            <Button className="mr-5" txt= "Learn More"/>
+            <Button className="mr-5" txt= "Learn More" onClick={handleArtcile}/>
             <Button txt= "Apply Now" onClick={handleForm}/>
             <img src= {Ellipse2}  alt='ellipse2' className=' absolute  -bottom-36 -right-[19rem]  w-96 rotateCircleClk' />
             </div>

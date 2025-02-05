@@ -189,3 +189,68 @@ h1 {
                 transform: rotate(-10deg);
             }
 }
+
+.container1 {
+    width: 40%;
+    margin: 0 auto;
+  }
+  #cards {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--cards), var(--cardHeight));
+    gap: var(--cardMargin);
+    padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+    margin-bottom: var(--cardMargin);
+  }
+  #card1 {
+    --index: 1;
+  }
+  #card2 {
+    --index: 2;
+  }
+  #card3 {
+    --index: 3;
+  }
+  #card4 {
+    --index: 4;
+  }
+  .card {
+    position: sticky;
+    top: 0;
+    padding-top: calc(var(--index) * var(--cardTopPadding));
+  }
+  
+  #card1 .card-body {
+    background-color: white;
+    box-shadow: 2px 4px 20px  rgb(241, 154, 154, 1),  -5px -5px 10px rgb(248, 194, 194, 1);
+
+  }
+  #card2 .card-body {
+    background-color: white;
+    box-shadow:2px 4px 20px rgb(255, 255, 111), -5px -5px 10px 3px rgb(253, 253, 173);
+  }
+  #card3 .card-body {
+    background-color: white;
+    box-shadow: 2px 4px 20px rgb(109, 226, 255,1), -5px -5px 10px 3px rgb(186, 246, 246,1);
+  }
+  
+  .card-body {
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+    height: var(--cardHeight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+  }
+
+  .rooting {
+    --cards: 4;
+    --cardHeight:40vh;
+    --cardTopPadding: 1.5em;
+    --cardMargin: 2vw;
+  }

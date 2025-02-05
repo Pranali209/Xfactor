@@ -7,6 +7,7 @@ import AboutUs from './Pages/About.jsx'
 import Acceration from './Pages/Acceration.jsx'
 import Hackthon from './Pages/Hackthon.jsx'
 import Form from './Component/form/index.jsx'
+import Article from './Pages/Article.jsx'
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,12 @@ const router = createBrowserRouter([
   },{
     path :'/form',
     element : <Form/>
-  }
+  },{
+    
+      path :'/article',
+      element : <Article/>
+    }
+  
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>

@@ -3,8 +3,9 @@ import Button from '../Component/Button';
 import about1 from '../assets/about1.svg'
 import about2 from '../assets/about2.svg'
 import about3 from '../assets/about3.svg'
-
+import { useNavigate } from 'react-router-dom'
 const AboutUs = () => {
+  const navigate = useNavigate()
     const data= [
         {
             id:1,
@@ -26,6 +27,9 @@ const AboutUs = () => {
             
         }
     ]
+    function handleForm(params) {
+      navigate('/form')
+  }
   return (
     <div className="container mx-auto p-8 py-10 flex  justify-between align-middle items-center flex-col">
       <h1 className="text-3xl text-center text-black  mb-4">About Us</h1>
@@ -47,7 +51,7 @@ const AboutUs = () => {
       }
      
       
-    <Button txt="Join the Movement"/>
+    <Button className = "!w-44 !px-0.5" txt="Join the Movement" onClick={handleForm}/>
     </div>
   );
 };
