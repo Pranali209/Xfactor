@@ -224,16 +224,16 @@ h1 {
   
   #card1 .card-body {
     background-color: white;
-    box-shadow: 2px 4px 20px  rgb(241, 154, 154, 1),  -5px -5px 10px rgb(248, 194, 194, 1);
+    box-shadow: 2px 4px 20px  rgb(241, 154, 154, 1),  1px 6px 10px rgb(248, 194, 194, 1);
 
   }
   #card2 .card-body {
     background-color: white;
-    box-shadow:2px 4px 20px rgb(255, 255, 111), -5px -5px 10px 3px rgb(253, 253, 173);
+    box-shadow:2px 4px 20px rgb(255, 255, 111), 1px 6px 10px 3px rgb(253, 253, 173);
   }
   #card3 .card-body {
     background-color: white;
-    box-shadow: 2px 4px 20px rgb(109, 226, 255,1), -5px -5px 10px 3px rgb(186, 246, 246,1);
+    box-shadow: 2px 4px 20px rgb(109, 226, 255,1), 1px 6px 10px 3px rgb(186, 246, 246,1);
   }
   
   .card-body {
