@@ -254,3 +254,16 @@ h1 {
     --cardTopPadding: 1.5em;
     --cardMargin: 2vw;
   }
+
+  @media (max-width: 768px) {
+    .slider-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 90%;
+  }
+  .slide {
+    flex: 0 0 80%;
+   
+    width: 80%;
+  }
+  }
