@@ -252,21 +252,22 @@ h1 {
   }
   @keyframes borderCircle {
     0% {
-        transform: translate(0, 0) rotate(0deg) translate(20vw, -5vh) rotate(0deg);
+        transform: translate(0, 0) rotate(0deg) translate(5vw, -5vh) rotate(0deg);
     }
     25% {
-        transform: translate(0, 0) rotate(90deg) translate(10vw, -10vh) rotate(-90deg);
+        transform: translate(0, 0) rotate(90deg) translate(5vw, -10vh) rotate(-90deg);
     }
     50% {
-        transform: translate(0, 0) rotate(180deg) translate(10vw, -15vh) rotate(-180deg);
+        transform: translate(0, 0) rotate(180deg) translate(5vw, -15vh) rotate(-180deg);
     }
     75% {
-        transform: translate(0, 0) rotate(270deg) translate(10vw, -10vh) rotate(-270deg);
+        transform: translate(0, 0) rotate(270deg) translate(5vw, -10vh) rotate(-270deg);
     }
     100% {
-        transform: translate(0, 0) rotate(360deg) translate(10vw, -5vh) rotate(-360deg);
+        transform: translate(0, 0) rotate(360deg) translate(5vw, -5vh) rotate(-360deg);
     }
 }
+
 
 
   
