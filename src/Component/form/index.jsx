@@ -6,16 +6,16 @@ import EllipseForm2 from '../../assets/EllipseForm2.svg'
 import EllipseForm3 from '../../assets/EllipseForm3.svg'
 function Form() {
     return (
-        <div className='my-24'>
-            <Heading className="text-center font-semibold text-5xl text-black" as="h1" text="Ready to Hack the Future ?" />
-            <Heading className="text-center w-[50%] mx-auto text-lg mt-8 text-black" as="p"
+        <div className='my-24 max-md:px-5'>
+            <Heading className="text-center max-md:text-4xl font-semibold text-5xl text-black" as="h1" text="Ready to Hack the Future ?" />
+            <Heading className="text-center w-[50%]  max-md:w-full mx-auto text-lg mt-8 text-black" as="p"
                 text="Join the X-Factor Hackathon and show the world what you’re made of. Fill out the form below to secure your spot!" />
 
-            <div className='px-40 my-20 relative'>
-                <img src={EllipseForm3} alt='ellipse1' className='absolute top-10 left-0 w-60  bgRotate ' />
+            <div className='px-40 max-md:px-5 my-20 relative'>
+                <img src={EllipseForm3} alt='ellipse1' className='absolute top-10 left-0 w-60 max-md:w-40 bgRotate ' />
                 
                 <Heading className="text-center font-semibold text-4xl text-black" as="h1" text="Application form " />
-                <div className='mx-32'>
+                <div className='mx-32 max-md:mx-3.5'>
                     <Heading className="text-left font-semibold text-2xl mt-10 -ml-5 text-black" as="h1" text="Personal Details" />
                     <Heading className="text-left text-base mt-1 text-black -ml-5" as="p"
                         text="Let’s get to know you " />
@@ -40,9 +40,9 @@ function Form() {
 
             </div>
 
-            <div className=' px-40 my-20 relative '>
-            <img src={EllipseForm} alt='ellipse1' className=' absolute top-10 right-0  w-96 bgRotate -z-10' />
-                <div className='mx-32'>
+            <div className=' px-40 max-md:px-5  my-20 relative '>
+            <img src={EllipseForm} alt='ellipse1' className=' absolute top-10 right-0  w-96 max-md:w-40 bgRotate -z-10' />
+                <div className='mx-32 max-md:mx-3.5'>
                     <Heading className="text-left font-semibold text-2xl mt-10  text-black -ml-5" as="h1" text="Team Information" />
                     <Heading className="text-left text-base mt-1 -ml-5 text-black" as="p"
                         text="Flying solo or bringing a squad? " />
@@ -67,13 +67,13 @@ function Form() {
                         <label htmlFor="Nom" className=' font-light'>Number of Members *</label>
                         <input type="tel" id="NOM" className="w-full p-2 mt-1.5  py-3 px-5  rounded-xl boxShadowInput custom-placeholder" placeholder='Number of Members' />
                     </div>
-                    <div className='mt-8 flex justify-between'>
-                        <div className='w-[40%]'>
+                    <div className='mt-8 flex justify-between max-md:flex-col'>
+                        <div className='w-[40%] max-md:w-full'>
                             <label htmlFor="Tname" className=' font-light block'>Team Members Names*</label>
 
                             <input type="text" id="Tname" className="w-full p-2 mt-1.5   border-[1px] border-black py-3 px-5  rounded-full boxShadowInput custom-placeholder" placeholder='Names' />
                         </div>
-                        <div className='w-[40%]'>
+                        <div className='w-[40%] max-md:w-full'>
                             <label htmlFor="role" className='  font-light block'>Role</label>
                             <input type="tel" id="role" className="w-full p-2 mt-1.5  py-3 px-5 border-[1px] border-black rounded-full boxShadowInput custom-placeholder" placeholder='Number of Members' />
                         </div>
@@ -82,9 +82,9 @@ function Form() {
 
             </div>
 
-            <div className=' px-40 my-20 relative '>
-            <img src={EllipseForm2} alt='ellipse1' className=' absolute top-10 left-0  w-96 bgRotate -z-10' />
-                <div className='mx-32'>
+            <div className=' px-40 max-md:px-5  my-20 relative '>
+            <img src={EllipseForm2} alt='ellipse1' className=' absolute top-10 left-0 max-md:w-40 w-96 bgRotate -z-10' />
+                <div className='mx-32 max-md:mx-3.5'>
                     <Heading className="text-left font-semibold text-2xl mt-10  text-black -ml-5" as="h1" text="Your Idea/Skills" />
                     <Heading className="text-left text-base mt-1 -ml-5 text-black" as="p"
                         text="Tell us about your superpowers " />
@@ -99,8 +99,8 @@ function Form() {
                 </div>
             </div>
 
-            <div className=' px-40 my-20 '>
-                <div className='mx-32'>
+            <div className=' px-40 my-20 max-md:px-5 '>
+                <div className='mx-32 max-md:mx-3.5'>
                     <Heading className="text-left font-semibold text-2xl mt-10  text-black -ml-5" as="h1" text="Experience" />
                     <Heading className="text-left text-base mt-1 -ml-5 text-black" as="p"
                         text="Show us what you’ve done before" />
@@ -121,9 +121,9 @@ function Form() {
                 </div>
             </div>
 
-            <div className=' px-40 my-20 '>
+            <div className=' px-40 my-20 max-md:px-5 '>
             
-                <div className='mx-32'>
+                <div className='mx-32 max-md:mx-3.5'>
                     <Heading className="text-left font-semibold text-2xl mt-10  text-black -ml-5" as="h1" text="Acknowledgments" />
                     <Heading className="text-left text-base mt-1 -ml-5 text-black" as="p"
                         text="A quick confirmation before we get started" />
@@ -137,7 +137,7 @@ function Form() {
             </div>
             <div className='mt-16 mx-auto flex justify-between items-center flex-col'>
                     <Heading className="text-center font-semibold text-4xl mt-10  text-black " as="h1" text="You’re Almost In!" />
-                    <Heading className="text-center mx-auto text-base mt-8 w-[30%] mb-10 text-black" as="p"
+                    <Heading className="text-center mx-auto text-base mt-8 w-[30%] max-md:w-full mb-10 text-black" as="p"
                         text="Thanks for applying! Keep an eye on your inbox for updates, and get ready to create something extraordinary" />
                    <Button txt= "Submit"/>
                     </div>

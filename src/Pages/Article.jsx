@@ -28,12 +28,12 @@ function Article() {
 
     ]
     return (
-        <div className='py-16 px-28 '>
+        <div className='py-16 px-28 max-md:px-5 '>
             <section className=''>
-                <Heading className="text-left font-semibold w-[52%] text-5xl text-black" as="h1"
+                <Heading className="text-left font-semibold w-[52%] max-md:w-full text-5xl max-md:text-3xl text-black" as="h1"
                     text="Trakpe Wins ₹25L as Best AI Startup at X-Factor Hackathon" />
 
-                <Heading className=" text-base mt-10 w-[80%] text-black leading-relaxed" as="p"
+                <Heading className=" text-base mt-10 w-[80%] max-md:w-full text-black leading-relaxed" as="p"
                     text="This past weekend, X-Factor successfully concluded its much-anticipated Hackathon,
              bringing together over 40 startups, developers, and innovators from across India, 
              including Jaipur's thriving tech scene. The event fostered a spirit of collaboration, creativity,
@@ -41,7 +41,7 @@ function Article() {
               Artificial Intelligence.
             "/>
 
-                <Heading className=" text-base mt-2.5 w-[80%] text-black leading-relaxed" as="p"
+                <Heading className=" text-base mt-2.5 w-[80%] max-md:w-full text-black leading-relaxed" as="p"
                     text=" The highlight of the Hackathon was Jaipur-based startup Trakpe, which walked away with 
             the grand prize of ₹25L for their outstanding contribution to the Ed-Tech industry. 
             Trakpe’s AI-powered platform is designed to create personalized learning pathways for 
@@ -49,7 +49,7 @@ function Article() {
             with dynamically tailored content.
             "/>
 
-                <Heading className=" text-base mt-2.5 w-[80%] text-black leading-relaxed" as="p"
+                <Heading className=" text-base mt-2.5 w-[80%] max-md:w-full text-black leading-relaxed" as="p"
                     text=' “This Hackathon was a hub of innovation. Every team brought something extraordinary to the table. Selecting winners was a challenge, but Trakpe’s solution truly stood out for its relevance, scalability, and potential to transform education,” said [Judge Name], one of the panelists at the event."' />
 
 
@@ -57,16 +57,16 @@ function Article() {
 
             <section className=''>
 
-                <Heading className="text-left font-semibold w-[60%] mt-10 text-4xl text-black" as="h1"
+                <Heading className="text-left font-semibold w-[60%] mt-10 text-4xl max-md:w-full max-md:text-3xl text-black" as="h1"
                     text="Trakpe: Transforming Education Through AI" />
                 <ul className=' list-disc list-inside ml-10'>
-                    <Heading className=" -ml-5 text-base mt-5 w-[80%] text-black leading-relaxed" as="p"
+                    <Heading className=" -ml-5 text-base mt-5 w-[80%] max-md:w-full text-black leading-relaxed" as="p"
                         text="Trakpe’s innovative platform leverages Artificial Intelligence to:" />
                     <li className='mt-2.5'>Analyze learners’ current skill levels.</li>
                     <li className='mt-0.5'>Design custom pathways to meet their career objectives.</li>
                     <li className='mt-0.5'>Dynamically adapt content to suit each learner’s preferences.</li>
 
-                    <Heading className="text-black text-base mt-2.5 w-[80%] -ml-5" as="p"
+                    <Heading className="text-black text-base mt-2.5 w-[80%] max-md:w-full -ml-5" as="p"
                         text="Our goal is to make Skill Trainig personal, effective, and achievable for everyone,” said Chandani Soni, Founder of Trakpe. “Winning at the X-Factor Hackathon is a huge honor for us.
                      It validates our mission and gives us the boost we need to expand our platform" />
                 </ul>
@@ -76,9 +76,9 @@ function Article() {
                 articleData.map((data)=>{
                     return(
                         <section className='my-20'>
-                        <Heading className="text-left font-semibold w-[60%] mt-10 text-4xl text-black" as="h1"
+                        <Heading className="text-left font-semibold w-[60%] max-md:w-full mt-10 text-4xl text-black" as="h1"
                             text={data.title} />
-                        <Heading className=" text-base mt-7 w-[70%] text-black leading-relaxed" as="p"
+                        <Heading className=" text-base mt-7 w-[70%] max-md:w-full text-black leading-relaxed" as="p"
                             text={data.content}/>
         
         

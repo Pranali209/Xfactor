@@ -66,7 +66,7 @@ function Footer() {
           <Heading className="text-sm text-white mb-2.5" text="Just send us your contact email and we will contact you. " />
           <div>
             <input type="email" placeholder="Your Email" className="bg-black rounded-lg text-white 
-            px-4 w-96 max-md:w-fit border-[1px] border-white py-2 focus:outline-none focus:ring-2 focus:ring-gray-600" />
+            px-4 w-96 max-md:w-full border-[1px] border-white py-2 focus:outline-none focus:ring-2 focus:ring-gray-600" />
             <button className=" text-white -ml-5 max-md:-ml-6 ">→</button>
           </div>
 
