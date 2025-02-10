@@ -3,7 +3,7 @@ import Heading from '../Heading'
 
 function Footer() {
   return (
-    <div className='bg-black p-7 '>
+    <div className='bg-black p-7 max-md:w-full'>
       <footer className=" lg:block">
         <div className="flex  max-md:flex-col text-black justify-between items-start
         bg-white rounded-xl p-5    h-72 max-md:h-auto">

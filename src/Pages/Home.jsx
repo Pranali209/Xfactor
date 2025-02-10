@@ -63,7 +63,7 @@ function Home() {
 
 
 
-            <div className='flex justify-between  max-md:flex-col max-md:items-center'>
+            <div className='flex justify-between  max-md:flex-col max-md:items-center max-md:px-5'>
 
               {
                 heroBox.map((item) => {
@@ -78,7 +78,7 @@ function Home() {
 
 
         </section>
-        <section id="footer" className='mt-20'>
+        <section id="footer" className='mt-20 max-md:w-full'>
           <Footer />
         </section>
 
