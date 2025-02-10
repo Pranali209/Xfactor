@@ -45,8 +45,11 @@ function Home() {
       <div >
         <Header />
         <div id="Hero" className='backX ' >
-          <h1 className=" text-6xl text-black text-left text-normal  px-28 mt-16 leading-16 max-md:px-2 max-md:text-[45px] max-md:leading-12">
-            Your Startup. Our <br /> Platform. Together, We <br />Build the Future. </h1>
+          <h1 className=" max-md:hidden lg:block text-6xl text-black text-left text-normal  px-28 mt-16 leading-16 max-md:px-5 max-md:text-[43px] max-md:leading-12">
+            Your Startup. Our <br /> Platform. Together, We <br/>Build the  Future. </h1>
+
+            <h1 className=" max-md:block lg:hidden text-6xl text-black text-left text-normal  px-28 mt-16 leading-16 max-md:px-5 max-md:text-[43px] max-md:leading-14">
+            Your Startup.<br /> Our  Platform. <br/> Together, We <br />Build the <br/> Future. </h1>
           <p className=" text-[17px] mt-2 max-md:mt-5 text-left px-28 max-md:px-5  pr-[33rem] text-gray-800"  >X-Factor is where the most innovative startups accelerate their vision, scale <br />
             their impact, and stand out in a world of mediocrity.</p>
 

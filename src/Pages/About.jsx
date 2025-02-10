@@ -55,7 +55,7 @@ const AboutUs = () => {
           >
           {data.map((item) => (
           
-            <div key={item.id} className=" w-3xl boxShadow  p-8 slide rounded-3xl  py-9 mb-10 max-md:mb-0.5  max-md:border-[1px] max-md:border-gray-400  
+            <div key={item.id} className=" w-3xl boxShadow  p-8 slide rounded-3xl  py-9 max-md:py-10 mb-10 max-md:mb-0.5  max-md:border-[1px] max-md:border-gray-400  
                   max-md:mt-5 max-md:p-4   w-fit-content">
               <div className='flex justify-center items-center'>
                 <h2 className="text-xl max-md:text-lg font-semibold text-black mb-2 text-center">{item.head}</h2>
