@@ -5,7 +5,7 @@ import { useNavigate , Link} from 'react-router-dom'
 function Header() {
  
   return (
-    <header className="flex justify-between items-center mb-8 px-16 py-5 max-md:px-2.5">
+    <header className="flex justify-between items-center mb-8 px-16 py-5 max-md:px-5">
     <div className="flex items-center">
       <div className="w-5.5 h-5.5 rounded-sm bg-black flex justify-center items-center  mr-1.5">
         

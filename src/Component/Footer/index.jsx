@@ -6,7 +6,7 @@ function Footer() {
     <div className='bg-black p-7 '>
       <footer className=" lg:block">
         <div className="flex  max-md:flex-col text-black justify-between items-start
-        bg-white rounded-md p-5    h-72 max-md:h-auto">
+        bg-white rounded-xl p-5    h-72 max-md:h-auto">
           <div className="mb-4 md:mb-0 max-md:flex  max-md:w-full justify-between ">
             <div className="flex items-center">
               <div className="w-5.5 h-5.5 rounded-sm bg-black flex justify-center items-center  mr-1.5">
