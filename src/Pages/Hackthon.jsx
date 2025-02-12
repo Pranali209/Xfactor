@@ -9,13 +9,18 @@ import Hack1 from '../assets/hack1.svg'
 import gain4 from '../assets/gain4.svg'
 import Hack3 from '../assets/hack3.svg'
 import Hack4 from '../assets/hack4.svg'
-import Chain from '../assets/chain.svg'
 import creativityEmoji from '../assets/creativityEmoji.svg'
 import Feedback from '../assets/feedback.svg'
 import Confetti from '../assets/confetti.svg'
 import Button from '../Component/Button'
 import Cards from '../Component/Cards'
-
+import register1 from '../assets/register1.svg'
+import success4 from '../assets/success4.svg'
+import idea3 from '../assets/idea3.svg'
+import criteria2 from '../assets/criteria2.svg'
+import line1 from '../assets/line1.svg'
+import line2 from '../assets/line2.svg'
+import line3 from '../assets/line3.svg'
 import { useNavigate } from 'react-router-dom'
 function Hackthon() {
     const navigate = useNavigate()
@@ -81,19 +86,23 @@ function Hackthon() {
         {
             id: 1,
             step: "Step 1: Register",
+            className: "items-start",
             data: "Solo or squad? Pick your team, choose your theme, and sign up."
 
         }, {
             id: 2,
             step: "Step 2: Compete",
+            className: "items-end",
             data: "You’ve got 48 hours. Bring your A-game and solve challenges that matter"
 
         }, {
             id: 3,
             step: "Step 3: Pitch",
+            className: "items-start",
             data: "Impress the judges. Wow the room. Leave your mark."
         }, {
             id: 4,
+            className: "items-end",
             step: "Step 4: Win",
             data: "Take home grants, recognition, and a platform for your next big leap"
         }
@@ -110,60 +119,69 @@ function Hackthon() {
         navigate('/article')
     }
     return (
-        <div className='py-16 px-5 '>
-            <Heading className="text-center font-semibold text-5xl max-md:text-4xl text-black" as="h1" text="Hackathon" />
-            <Heading className="text-center text-lg  max-md:text-base mt-5 text-black" as="p" text="Hey, Innovator—Think You’ve Got What It Takes?" />
-            <div className='relative'>
-                <BoxA className="mt-12 w-4xl mx-auto px-28 max-md:px-2.5 max-md:max-w-fit" htxt="Let’s Talk Big Ideas" ptxt="This isn’t just another hackathon. It’s THE hackathon. The X-Factor Hackathon is where the brightest minds solve the biggest challenges—and walk away with life-changing grants."
-                    etxt="Bring your boldest ideas, build something extraordinary, and claim your spot as the next big innovator."
-                    pclass="font-medium" eclass="font-normal" />
+        <div className='py-16 hackthon backGrid  '>
+            <section className='px-24 max-md:px-5'>
 
-                <img src={Ellipse3} alt='ellipse1' className=' absolute top-10 right-0  w-96 max-md:w-48 bgRotate2' />
 
-            </div>
-            <div className='my-32 w-[60%] mx-auto max-md:w-full'>
-                <div className='flex  items-center justify-center'>
-                    <Heading className="text-center font-semibold  text-4xl text-black " as="h1" text="Prizes" />
-                    <img src={PrizeIcon} className='ml-1 w-16 ' />
+                <Heading className="text-left font-semibold text-3xl max-md:text-4xl text-black" as="h1" text="Hackathon 1.0 Application (SUMMER) 5/30-8/24" />
+                <Heading className="text-left text-lg  max-md:text-base mt-8 text-black" as="p" text="Hey, Innovator—Think You’ve Got What It Takes?" />
+
+                <div className='relative my-16 '>
+                    <Heading className="text-left font-semibold text-3xl max-md:text-4xl text-black" as="h1" text="Let’s Talk Big Ideas" />
+                    <Heading className="text-left text-lg w-[70%] max-md:w-full max-md:text-base mt-5 text-black" as="p" text="This isn’t just another hackathon. It’s THE hackathon. The X-Factor Hackathon is where the brightest minds solve the biggest challenges—and walk away with life-changing grants" />
+                    <Heading className="text-left text-lg  w-[70%] max-md:w-full max-md:text-base mt-5 text-black" as="p" text="Bring your boldest ideas, build something extraordinary, and claim your spot as the next big innovator." />
+                    <img src={Ellipse3} alt='ellipse1' className=' absolute top-10 right-0  w-96 max-md:w-48 bgRotate2' />
+
+                </div>
+                <div className='my-32   max-md:w-full'>
+                    <div className='flex items-start '>
+                        <Heading className=" font-semibold  text-4xl text-black " as="h1" text="Prizes" />
+                        <img src={PrizeIcon} className='ml-1 w-16 ' />
+                    </div>
+
+                    <section className=" max-md:overflow-hidden max-md:px-2 w-[90%]   ">
+                        <div className='flex justify-between items-center my-16 max-md:w-full  slider-container'
+                            style={isMediumScreen ? { transform: `translateX(-${currentIndex * 98}%)` } : {}}>
+
+                            <BoxA className="w-72 max-md:w-full  prize1 max-md:mr-2.5 max-md:py-5 boxShadow slide" htxt=" 🏆1st Place:" ptxt="₹ 50L Grant" etxt="The grand prize for the idea that redefines the rules of innovation."
+                                hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" !text-lg mt-10 max-md:mt-5 " />
+                            <BoxA className="w-72 max-md:w-full  prize2 max-md:mr-2.5 max-md:py-5 boxShadow slide" htxt="🥈2nd Place:" ptxt="₹ 30L Grant" etxt="For the solution that’s bold, impactful, and unforgettable."
+                                hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" mt-10 max-md:mt-5  !text-lg " />
+                            <BoxA className="w-72 max-md:w-full  prize3  max-md:mr-2.5 max-md:py-5 boxShadow slide" htxt="🥉3rd Place:" ptxt="₹ 20L Grant" etxt="Because brilliance deserves recognition, always."
+                                hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" mt-10 max-md:mt-5  !text-lg" />
+
+                        </div>
+                    </section>
+
+                    <p className='text-[#676767] text-center'>
+                        Note:
+                        <br />This isn’t just prize money—it’s your ticket to turning ideas into action.
+                    </p>
                 </div>
 
-                <section className=" max-md:overflow-hidden max-md:px-2   ">
-                    <div className='flex justify-evenly items-center my-16 max-md:w-full  slider-container'
-                     style={isMediumScreen ? { transform: `translateX(-${currentIndex * 98}%)` } : {}}>
+                <Heading className=" text-4xl max-md:text-3xl font-semibold text-black mt-20" as="h1" text="What You’ll Gain" />
+                <Heading className=" text-lg max-md:text-base mt-7 mb-16 text-black  w-[60%] max-md:w-full " as="p" text="You’re here because you’re not like the rest. You’re here because you thrive on solving impossible problems. Here’s what’s waiting for you:" />
+            </section>
 
-                        <BoxA className="w-56 max-md:w-full py-12 max-md:mr-2.5 max-md:py-5 boxShadow slide" htxt=" 🏆1st Place:" ptxt="₹ 50L Grant" etxt="The grand prize for the idea that redefines the rules of innovation."
-                            hclass="text-2xl" pclass="font-medium text-xl !mt-2" eclass=" mt-10 max-md:mt-5 !font-medium" />
-                        <BoxA className="w-56 max-md:w-full py-12 max-md:mr-2.5 max-md:py-5 boxShadow slide" htxt="🥈2nd Place:" ptxt="₹ 30L Grant" etxt="The grand prize for the idea that redefines the rules of innovation."
-                            hclass="text-2xl" pclass="font-medium text-xl !mt-2" eclass=" mt-10 max-md:mt-5 !font-medium" />
-                        <BoxA className="w-56 max-md:w-full py-12  max-md:mr-2.5 max-md:py-5 boxShadow slide" htxt="🥉3rd Place:" ptxt="₹ 20L Grant" etxt="The grand prize for the idea that redefines the rules of innovation."
-                            hclass="text-2xl" pclass="font-medium text-xl !mt-2" eclass=" mt-10 max-md:mt-5 !font-medium" />
+            <section className='px-5'>
 
-                    </div>
-                </section>
 
-                <p className='text-[#676767] text-center'>
-                    Note:
-                    <br />This isn’t just prize money—it’s your ticket to turning ideas into action.
-                </p>
-            </div>
-
-            <Heading className="text-center text-4xl max-md:text-3xl font-semibold text-black mt-20" as="h1" text="What You’ll Gain" />
-            <Heading className="text-center text-lg max-md:text-base mt-7 text-black  w-[40%] max-md:w-full mx-auto" as="p" text="You’re here because you’re not like the rest. You’re here because you thrive on solving impossible problems. Here’s what’s waiting for you:" />
-            {
-                Accadata.map((gain, index) => (
-                    isclicked === gain.id ?
-                        (<div className={`boxShadow  w-4xl max-md:w-fit  h-72 
+                {
+                    Accadata.map((gain, index) => (
+                        isclicked === gain.id ?
+                            (<div className={`boxShadow  w-4xl max-md:w-fit  h-72 
                         rounded-3xl mx-auto px-10 py-10 mt-10 max-md:px-3.5 max-md:py-5 flex justify-between items-center`}>
-                            <div className='max-md:w-[60%]'>
-                                <Heading className={`text-left  max-md:text-lg text-2xl text-black font-semibold ${isclicked === gain.id ? 'slide-in-right' : previousId === gain.id ? 'slide-exit' : ''}`} as="h1" text={gain.title} />
-                                <Heading className={`text-left text-base max-md:text-sm  mt-1 ml-6 max-md:ml-2 text-black w-[30rem] max-md:w-fit ${isclicked === gain.id ? 'slide-in-left' : previousId === gain.id ? 'slide-exit' : ''} `} as="p" text={gain.description} />
-                            </div>
-                            <img src={gain.image} alt="gain1" className=' h-36 max-md:h-20 slide-in-top' />
+                                <div className='max-md:w-[60%]'>
+                                    <Heading className={`text-left  max-md:text-lg text-2xl text-black font-semibold ${isclicked === gain.id ? 'slide-in-right' : previousId === gain.id ? 'slide-exit' : ''}`} as="h1" text={gain.title} />
+                                    <Heading className={`text-left text-base max-md:text-sm  mt-1 ml-6 max-md:ml-2 text-black w-[30rem] max-md:w-fit ${isclicked === gain.id ? 'slide-in-left' : previousId === gain.id ? 'slide-exit' : ''} `} as="p" text={gain.description} />
+                                </div>
+                                <img src={gain.image} alt="gain1" className=' h-36 max-md:h-20 slide-in-top' />
 
-                        </div>) : " "
-                ))
+                            </div>) : " "
+                    ))
 
-            }
+                }
+            </section>
             <div className="-mt-5 bg-[#D9D9D9] py-11 ">
                 <div class="container mx-auto p-8  px-20 max-md:px-5">
                     <div class="flex items-center justify-around ">
@@ -190,37 +208,64 @@ function Hackthon() {
                     </div>
                 </div>
 
-            </div>
-            <div className="container relative my-28 px-7 py-16 mx-auto boxShadow rounded-4xl w-[60%] max-md:w-full  flex flex-col justify-between items-center ">
 
-                <img src={Chain} alt="chain" className=' absolute -top-10  left-10 w-20' />
+            </div>
+
+            <div className="container relative my-28 px-7 py-16  mx-auto  w-[60%] max-md:w-full  flex flex-col justify-between items-center ">
+
                 <Heading className="text-center font-semibold  max-md:text-3xl text-4xl text-black " as="h1" text="How It Works" />
                 <Heading className="text-xl  max-md:text-base mt-5  text-black" as="p" text="(Don't Worry, It's Simple)" />
-                <ol className="list-decimal  mt-10 ">
-                    {
-                        ChainData.map((chain) => {
-                            return (
-                                <li className="mb-3.5" key={chain.id}>
-                                    <h3 className=" font-semibold   inline-block ">{chain.step}</h3>
-                                    <p className="text-black">{chain.data}</p>
-                                </li>
-                            )
-                        })
-                    }
 
-
-                </ol>
             </div>
 
+            <section className='px-36 max-md:px-5'>
+                <div className='flex relative '>
+                    <div className='flex flex-col justify-center items-start w-[30%] mt-10 '>
+                        <img src={register1} alt="register" className='h-16' />
+                        <p className='mt-2.5 font-semibold'> Step 1 : Register</p>
+                        <p className='mt-2.5 w-2xs'>Solo or squad? Pick your team, choose your theme, and sign up.</p>
+                    </div>
+                    <img src={line1} alt="line1" className='max-md:hidden  absolute left-72 top-24' />
+                </div>
 
-            <div className='mx-auto my-16 relative max-md:px-5'>
-                <div className='flex  items-center justify-center'>
-                    <Heading className="text-center font-semibold  text-4xl  max-md:text-3xl text-black " as="h1" text="What's the big Idea?" />
+
+                <div className='flex flex-col justify-center items-end mt-24  '>
+                    <img src={register1} alt="register" className='h-16' />
+                    <p className='mt-5 font-semibold'>Step 2: Compete</p>
+                    <p className='mt-5 w-[30%] max-md:w-full text-right'>You’ve got 48 hours. Bring your A-game and solve challenges that matter.</p>
+
+                </div>
+
+                <div className='flex relative '>
+                    <div className='flex flex-col justify-center items-start mt-24 '>
+                        <img src={register1} alt="register" className='h-16' />
+                        <p className='mt-5 font-semibold'> Step 3: Pitch</p>
+                        <p className='mt-5 w-2xs'>Impress the judges. Wow the room. Leave your mark.</p>
+                        <img src={line2} alt="line1" className=' max-md:hidden absolute -top-0.5 right-96' />
+                    </div>
+                </div>
+
+               
+                    <div className='flex flex-col justify-center items-end mt-24  relative '>
+                        <img src={register1} alt="register" className='h-16' />
+                        <p className='mt-2.5 font-semibold'> Step 4: Win</p>
+                        <p className='mt-5 w-[30%] max-md:w-full text-right'>Take home grants, recognition, and a platform for your next big leap</p>
+                        <img src={line3} alt="line1" className='max-md:hidden  absolute -top-28 right-96' />
+                    </div>
+                
+               
+            </section>
+
+            <div className='my-16 relative px-24 max-md:px-5'>
+                <div className='flex  items-center '>
+                    <Heading className=" font-semibold  text-4xl  max-md:text-3xl text-black " as="h1" text="What's the big Idea?" />
                     <img src={creativityEmoji} className='ml-1 w-16 ' />
                 </div>
 
-                <Heading className="text-center -ml-7 text-[19px] max-md:text-base  mt-5 text-black" as="p" text="Choose your challenge. Solve something extraordinary." />
-                <div className='flex flex-col justify-center items-center my-5'>
+
+
+                <Heading className=" text-[19px] max-md:text-base  mt-5 text-black" as="p" text="Choose your challenge. Solve something extraordinary." />
+                <div className='flex flex-col  my-5'>
                     <ul className="list-disc ml-10 max-md:ml-5 mt-5 list-inside  text-base text-black">
                         <Heading className=" text-lg mt-5 text-black" as="p" text="Some of the themes you’ll dive into:" />
                         <li className=" ml-8 max-md:ml-4 text-[17px] mt-5 text-black"><b>🌏 Sustainability :</b> Because the planet needs you</li>
@@ -239,26 +284,26 @@ function Hackthon() {
                 <div className='flex justify-evenly items-center my-16 max-md:flex-col'>
                     <div className='relative'>
                         <img src={Feedback} alt="feedback" className='absolute -bottom-3.5 -left-1.5 w-16' />
-                        <BoxA className="w-60 h-64 !py-8 boxShadow" htxt="" ptxt="“The X-Factor Hackathon didn’t just challenge us—it elevated us. The ₹50L grant transformed our idea into a product.”"
+                        <BoxA className="w-64 h-72 max-md:h-60 !py-8 boxShadow" htxt="" ptxt="“The X-Factor Hackathon didn’t just challenge us—it elevated us. The ₹50L grant transformed our idea into a product.”"
                             etxt="-Ram"
                             eclass="!mt-2" />
                     </div>
 
 
-                    <div className='relative max-md:mt-7'>
+                    <div className='relative max-md:mt-10'>
                         <img src={Confetti} alt="feedback" className='absolute -top-5 -right-1.5 w-16' />
-                        <BoxA className="w-60 h-64  boxShadow" htxt="" ptxt="“This was more than a competition. It was a launchpad for our dreams.” " etxt="-Riddhi" eclass="!mt-2" />
+                        <BoxA className="w-64 h-72 max-md:h-60 boxShadow" htxt="" ptxt="“This was more than a competition. It was a launchpad for our dreams.” " etxt="-Riddhi" eclass="!mt-2" />
                     </div>
 
 
                 </div>
             </div>
-            <div className='flex flex-col justify-between items-center'>
+            <div className='flex flex-col justify-between items-center px-8'>
                 <Heading className="text-center font-medium  text-4xl text-black " as="h1" text="Meets our winners" />
                 <Heading className="text-center text-lg mt-7 text-black  mx-auto mb-16" as="p" text="The Ones Who Made It Big" />
                 <Cards />
             </div>
-            <div className='my-20 flex flex-col justify-center items-center'>
+            <div className='my-20 flex flex-col justify-center items-center  px-8'>
                 <Heading className="text-center font-medium  text-4xl text-black " as="h1" text="Let’s Build Something Epic Together" />
                 <Heading className="text-center text-lg mt-7 text-black  mx-auto" as="p" text="We believe startups like yours are the key to shaping the future. Are you ready to join the legacy?" />
                 <Button className="mt-12" txt="Apply Now" onClick={handleForm} />

@@ -20,7 +20,7 @@ function Home() {
   const heroBox = [
     {
       id: 1,
-      title: 'Acceleration Program',
+      title: 'Acceleration Program (Soon)',
       text: 'A program built for startups ready to scale, disrupt, and dominate their industries.',
     }, {
       id: 2,
@@ -68,7 +68,7 @@ function Home() {
               {
                 heroBox.map((item) => {
                   return (
-                    <Box key={item.id} heading={item.title} txt={item.text} onClick={() => HandleOnclick(item.id)} />
+                    <Box id={item.id} heading={item.title} txt={item.text} onClick={() => HandleOnclick(item.id)} />
                   )
                 })
               }
@@ -78,10 +78,7 @@ function Home() {
 
 
         </section>
-        <section id="footer" className='mt-20 max-md:w-full'>
-          <Footer />
-        </section>
-
+        
 
       </div>
     </>
