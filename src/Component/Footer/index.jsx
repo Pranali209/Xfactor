@@ -1,5 +1,6 @@
 import React from 'react'
 import Heading from '../Heading'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -21,19 +22,19 @@ function Footer() {
             <ul className="text-sm  ">
              
               <li>
-                <a href="#" className="hover:text-gray-300">FAQ</a>
+                <a href="/hackathon#faqSection" className="hover:text-gray-300">FAQ</a>
               </li>
               
           
               <li>
-                <a href="#" className="hover:text-gray-300">Application</a>
+                <a href="/" className="hover:text-gray-300">Application</a>
               </li>
             </ul>
           </div>
           <div className="text-black max-md:mt-9">
-            <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+            <Link to='/form' className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
               Contact
-            </button>
+            </Link>
             <p className="mt-2 text-sm">Payments@X-Factor.capital</p>
             <p className="text-sm">admin@X-factor.xyz</p>
           </div>

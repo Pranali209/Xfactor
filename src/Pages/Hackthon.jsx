@@ -22,15 +22,28 @@ import line1 from '../assets/line1.svg'
 import line2 from '../assets/line2.svg'
 import line3 from '../assets/line3.svg'
 import { useNavigate } from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
+import Footer from '../Component/Footer'
 function Hackthon() {
     const navigate = useNavigate()
+    
+    const [isclicked, setIsClicked] = useState(1)
+    const [previousId, setPreviousId] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
+    const location = useLocation();
     useEffect(() => {
+        const hash = location.hash;
+        if (hash) {
+            const element = document.querySelector(hash);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % 3);
         }, 3000);
         return () => clearInterval(interval);
-    }, [])
+    }, [location])
     const isMediumScreen = window.matchMedia('(max-width: 768px)').matches;
 
     function handleForm(params) {
@@ -82,34 +95,6 @@ function Hackthon() {
         }
     ]
 
-    const ChainData = [
-        {
-            id: 1,
-            step: "Step 1: Register",
-            className: "items-start",
-            data: "Solo or squad? Pick your team, choose your theme, and sign up."
-
-        }, {
-            id: 2,
-            step: "Step 2: Compete",
-            className: "items-end",
-            data: "You’ve got 48 hours. Bring your A-game and solve challenges that matter"
-
-        }, {
-            id: 3,
-            step: "Step 3: Pitch",
-            className: "items-start",
-            data: "Impress the judges. Wow the room. Leave your mark."
-        }, {
-            id: 4,
-            className: "items-end",
-            step: "Step 4: Win",
-            data: "Take home grants, recognition, and a platform for your next big leap"
-        }
-    ]
-
-    const [isclicked, setIsClicked] = useState(1)
-    const [previousId, setPreviousId] = useState(null);
 
     function handleIsClicked(id) {
         setPreviousId(isclicked)
@@ -130,7 +115,7 @@ function Hackthon() {
                     <Heading className="text-left font-semibold text-3xl max-md:text-4xl text-black" as="h1" text="Let’s Talk Big Ideas" />
                     <Heading className="text-left text-lg w-[70%] max-md:w-full max-md:text-base mt-5 text-black" as="p" text="This isn’t just another hackathon. It’s THE hackathon. The X-Factor Hackathon is where the brightest minds solve the biggest challenges—and walk away with life-changing grants" />
                     <Heading className="text-left text-lg  w-[70%] max-md:w-full max-md:text-base mt-5 text-black" as="p" text="Bring your boldest ideas, build something extraordinary, and claim your spot as the next big innovator." />
-                    <img src={Ellipse3} alt='ellipse1' className=' absolute top-10 right-0  w-96 max-md:w-48 bgRotate2' />
+                    <img src={Ellipse3} alt='ellipse1' className=' absolute top-10 -right-2.5 w-96 max-md:w-48 bgRotate2' />
 
                 </div>
                 <div className='my-32   max-md:w-full'>
@@ -139,15 +124,15 @@ function Hackthon() {
                         <img src={PrizeIcon} className='ml-1 w-16 ' />
                     </div>
 
-                    <section className=" max-md:overflow-hidden max-md:px-2 w-[90%]   ">
+                    <section className=" max-md:overflow-hidden max-md:px-2 w-[90%] mx-auto   ">
                         <div className='flex justify-between items-center my-16 max-md:w-full  slider-container'
                             style={isMediumScreen ? { transform: `translateX(-${currentIndex * 98}%)` } : {}}>
 
-                            <BoxA className="w-72 max-md:w-full  prize1 max-md:mr-2.5 max-md:py-5 boxShadow slide" htxt=" 🏆1st Place:" ptxt="₹ 50L Grant" etxt="The grand prize for the idea that redefines the rules of innovation."
+                            <BoxA className="w-72 max-md:w-full py-14  prize1 max-md:mr-2.5 max-md:py-5 boxShadow slide" htxt=" 🏆1st Place:" ptxt="₹ 50L Grant" etxt="The grand prize for the idea that redefines the rules of innovation."
                                 hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" !text-lg mt-10 max-md:mt-5 " />
-                            <BoxA className="w-72 max-md:w-full  prize2 max-md:mr-2.5 max-md:py-5 boxShadow slide" htxt="🥈2nd Place:" ptxt="₹ 30L Grant" etxt="For the solution that’s bold, impactful, and unforgettable."
+                            <BoxA className="w-72 max-md:w-full py-14 prize2 max-md:mr-2.5 max-md:py-5 boxShadow slide" htxt="🥈2nd Place:" ptxt="₹ 30L Grant" etxt="For the solution that’s bold, impactful, and unforgettable."
                                 hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" mt-10 max-md:mt-5  !text-lg " />
-                            <BoxA className="w-72 max-md:w-full  prize3  max-md:mr-2.5 max-md:py-5 boxShadow slide" htxt="🥉3rd Place:" ptxt="₹ 20L Grant" etxt="Because brilliance deserves recognition, always."
+                            <BoxA className="w-72 max-md:w-full py-16 prize3  max-md:mr-2.5 max-md:py-5 boxShadow slide" htxt="🥉3rd Place:" ptxt="₹ 20L Grant" etxt="Because brilliance deserves recognition, always."
                                 hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" mt-10 max-md:mt-5  !text-lg" />
 
                         </div>
@@ -211,14 +196,14 @@ function Hackthon() {
 
             </div>
 
-            <div className="container relative my-28 px-7 py-16  mx-auto  w-[60%] max-md:w-full  flex flex-col justify-between items-center ">
+            <div className="container relative my-28 max-md:my-16 px-7 py-16  mx-auto  w-[60%] max-md:w-full  flex flex-col justify-between items-center ">
 
                 <Heading className="text-center font-semibold  max-md:text-3xl text-4xl text-black " as="h1" text="How It Works" />
                 <Heading className="text-xl  max-md:text-base mt-5  text-black" as="p" text="(Don't Worry, It's Simple)" />
 
             </div>
 
-            <section className='px-36 max-md:px-5'>
+            <section className='px-36 max-md:px-5  w-[80%] mx-auto max-md:w-[90%]'>
                 <div className='flex relative '>
                     <div className='flex flex-col justify-center items-start w-[30%] mt-10 '>
                         <img src={register1} alt="register" className='h-16' />
@@ -230,7 +215,7 @@ function Hackthon() {
 
 
                 <div className='flex flex-col justify-center items-end mt-24  '>
-                    <img src={register1} alt="register" className='h-16' />
+                    <img src={criteria2} alt="register" className='h-16' />
                     <p className='mt-5 font-semibold'>Step 2: Compete</p>
                     <p className='mt-5 w-[30%] max-md:w-full text-right'>You’ve got 48 hours. Bring your A-game and solve challenges that matter.</p>
 
@@ -238,27 +223,27 @@ function Hackthon() {
 
                 <div className='flex relative '>
                     <div className='flex flex-col justify-center items-start mt-24 '>
-                        <img src={register1} alt="register" className='h-16' />
+                        <img src={idea3} alt="register" className='h-16' />
                         <p className='mt-5 font-semibold'> Step 3: Pitch</p>
                         <p className='mt-5 w-2xs'>Impress the judges. Wow the room. Leave your mark.</p>
-                        <img src={line2} alt="line1" className=' max-md:hidden absolute -top-0.5 right-96' />
+                        <img src={line2} alt="line1" className=' max-md:hidden absolute -top-0.5 right-60' />
                     </div>
                 </div>
 
                
                     <div className='flex flex-col justify-center items-end mt-24  relative '>
-                        <img src={register1} alt="register" className='h-16' />
+                        <img src={success4} alt="register" className='h-16' />
                         <p className='mt-2.5 font-semibold'> Step 4: Win</p>
                         <p className='mt-5 w-[30%] max-md:w-full text-right'>Take home grants, recognition, and a platform for your next big leap</p>
-                        <img src={line3} alt="line1" className='max-md:hidden  absolute -top-28 right-96' />
+                        <img src={line3} alt="line1" className='max-md:hidden  absolute -top-32 right-28' />
                     </div>
                 
                
             </section>
 
-            <div className='my-16 relative px-24 max-md:px-5'>
+            <div className='my-20 relative px-24 max-md:px-5'>
                 <div className='flex  items-center '>
-                    <Heading className=" font-semibold  text-4xl  max-md:text-3xl text-black " as="h1" text="What's the big Idea?" />
+                    <Heading className=" font-semibold  text-4xl  max-md:text-[26px] text-black " as="h1" text="What's the big Idea?" />
                     <img src={creativityEmoji} className='ml-1 w-16 ' />
                 </div>
 
@@ -298,7 +283,7 @@ function Hackthon() {
 
                 </div>
             </div>
-            <div className='flex flex-col justify-between items-center px-8'>
+            <div id="faqSection" className='flex flex-col justify-between items-center px-8'>
                 <Heading className="text-center font-medium  text-4xl text-black " as="h1" text="Meets our winners" />
                 <Heading className="text-center text-lg mt-7 text-black  mx-auto mb-16" as="p" text="The Ones Who Made It Big" />
                 <Cards />
@@ -309,9 +294,10 @@ function Hackthon() {
                 <Button className="mt-12" txt="Apply Now" onClick={handleForm} />
             </div>
 
-
+          <Footer/>
 
         </div>
+
     )
 }
 

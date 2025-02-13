@@ -3,7 +3,7 @@ import Heading from '../Heading'
 
 function BoxA({className , htxt ,ptxt ,etxt , hclass, pclass ,eclass }) {
   return (
-    <div className={`${className} px-7 py-14 p-5 boxShadow rounded-3xl `}>
+    <div className={`${className} px-7  p-5 boxShadow rounded-3xl `}>
       
         <Heading className={`text-2xl max-md:text-xl text-center font-semibold text-black ${hclass}`} as="h1" text={htxt}/>
         <Heading className={` mt-6 text-center max-md:text-sm text-black ${pclass}`} as= "p" text={ptxt}/>
