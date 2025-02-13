@@ -23,7 +23,7 @@ const AboutUs = () => {
 
   return (
     <div className='  backGrid ' >
-     <section className=' backX'>
+     <section className=' backX max-md:backXMobile'>
       <Header />
       <section className='px-24 w-[80%] max-md:px-5 max-md:w-full'>
         <Heading className="text-2xl mb-5 font-semibold " as="h1" text="Where Innovators Take the Lead " />

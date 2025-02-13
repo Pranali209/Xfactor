@@ -325,7 +325,26 @@ body {
         width: 100%;
         margin: 0 auto;
     }
-    @keyframes borderCircle {
+    .backXMobile {
+        position: relative;
+    }
+    
+    .backXMobile::before {
+        content: "";
+        position: absolute;
+        top: -400px;
+        left: 0;
+        width: 100%;
+        height: 150lvh;
+        background-image: url('./assets/bg-x.svg');
+        background-position: center;
+        background-size: contain;
+        z-index: -1;
+        animation: borderCircleMobile 20s linear infinite;
+        transform-origin: center;
+        background-repeat: no-repeat;
+    }
+    @keyframes borderCircleMobile {
     0% {
         transform: rotate(0deg) translate(10vw, -5vh) rotate(0deg);
     }

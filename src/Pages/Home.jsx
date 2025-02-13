@@ -9,14 +9,19 @@ import { Navigate, useNavigate } from 'react-router-dom'
 
 function Home() {
   const navigate = useNavigate()
-  const [currentIndex, setCurrentIndex] = useState(0);
-  useEffect(() => {
 
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % 2);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [])
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 767);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
   const heroBox = [
     {
       id: 1,
@@ -42,9 +47,9 @@ function Home() {
   return (
     <>
 
-      <div className=' ' >
+      <div className={isMobile ? 'backXMobile' : ''} >
         <Header />
-        <div id="Hero" className='backX' >
+        <div id="Hero" className={!isMobile && 'backX'} >
           <h1 className=" max-md:hidden lg:block text-6xl text-black text-left text-normal  px-28 mt-16 leading-16 max-md:px-5 max-md:text-[43px] max-md:leading-12">
             Your Startup. Our <br /> Platform. Together, We <br/>Build the  Future. </h1>
 
