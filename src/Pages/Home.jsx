@@ -59,7 +59,7 @@ function Home() {
 
           <div className=' '>
 
-            <Heading className="text-4xl mb-5 text-center mx-auto " as="h1" text="Our Program" />
+            <Heading className="text-4xl mb-5 text-center mx-auto max-md:mt-5 " as="h1" text="Our Program" />
 
 
 

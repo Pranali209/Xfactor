@@ -40,6 +40,7 @@ body {
     left: 0;
     width: 100%;
     height: 150lvh;
+    background-color: #f9f9f9;
     background-image: url('./assets/Backgroundgrid.svg');
     background-position: center;
     background-size: contain;
