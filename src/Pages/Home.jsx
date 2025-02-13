@@ -42,9 +42,9 @@ function Home() {
   return (
     <>
 
-      <div className='backX ' >
+      <div className=' ' >
         <Header />
-        <div id="Hero" className='' >
+        <div id="Hero" className='backX' >
           <h1 className=" max-md:hidden lg:block text-6xl text-black text-left text-normal  px-28 mt-16 leading-16 max-md:px-5 max-md:text-[43px] max-md:leading-12">
             Your Startup. Our <br /> Platform. Together, We <br/>Build the  Future. </h1>
 
