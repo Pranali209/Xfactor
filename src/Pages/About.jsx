@@ -23,8 +23,9 @@ const AboutUs = () => {
 
   return (
     <div className='  backGrid ' >
+     <section className=' backX'>
       <Header />
-      <section className='px-24 w-[80%] backX max-md:px-5 max-md:w-full'>
+      <section className='px-24 w-[80%] max-md:px-5 max-md:w-full'>
         <Heading className="text-2xl mb-5 font-semibold " as="h1" text="Where Innovators Take the Lead " />
         <Heading className="text-[17px] mt-5  text-gray-800" as="p"
           text="At X-Factor, we don’t believe in playing it safe. We exist for those who challenge the norm, push boundaries, and build what others only dream of. If you’re the kind of person who sees problems as opportunities and dares to create the future, you’ve found your place." />
@@ -86,7 +87,7 @@ const AboutUs = () => {
 
 
   
-
+      </section>
     </div>
   );
 }
