@@ -1,5 +1,6 @@
 @import "tailwindcss";
-.hackthon{
+
+.hackthon {
     font-family: "JetBrains Mono", serif;
 }
 
@@ -43,7 +44,7 @@ body {
     background-position: center;
     background-size: contain;
     z-index: -1;
- 
+
     transform-origin: center;
     background-repeat: no-repeat;
 }
@@ -51,31 +52,40 @@ body {
 /* Define the circular animation to touch screen borders */
 @keyframes borderCircle {
     0% {
-        transform: translate(0, 0) rotate(0deg) translate(10vw, 5vh) rotate(0deg);
+        transform: rotate(0deg) translate(10vw, -8vh) rotate(0deg);
     }
+
     25% {
-        transform: translate(0, 0) rotate(90deg) translate(10vw, 5vh) rotate(-90deg);
+        transform: rotate(90deg) translate(10vw, -10vh) rotate(-90deg);
     }
+
     50% {
-        transform: translate(0, 0) rotate(180deg) translate(10vw, 5vh) rotate(-180deg);
+        transform: rotate(180deg) translate(10vw, -10vh) rotate(-180deg);
     }
+
     75% {
-        transform: translate(0, 0) rotate(270deg) translate(10vw, 5vh) rotate(-270deg);
+        transform: rotate(270deg) translate(10vw, -8vh) rotate(-270deg);
     }
+
     100% {
-        transform: translate(0, 0) rotate(360deg) translate(10vw, 5vh) rotate(-360deg);
+        transform: rotate(360deg) translate(10vw, -10vh) rotate(-360deg);
     }
 }
 
+
+
 .boxShadow {
     box-shadow: 2px 4px 20px rgba(200, 200, 200, 1),
-    -5px -5px 10px rgba(255, 255, 255, 1); /* Adjusted box-shadow for white background */
+        -5px -5px 10px rgba(255, 255, 255, 1);
+    /* Adjusted box-shadow for white background */
 }
+
 @keyframes slideInRight {
     from {
         transform: translateX(100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -88,6 +98,7 @@ body {
         transform: translateX(-100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -100,6 +111,7 @@ body {
         transform: translateY(-100%);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -119,88 +131,103 @@ body {
     animation: slideInTop 2s forwards;
 }
 
-.btnbg{
+.btnbg {
     background: linear-gradient(180deg, #151D26 0%, #2B3D4F 100%)
 }
-.newbtnbg{
+
+.newbtnbg {
     background: linear-gradient(180deg, #b7b4b4 0%, #CCCCCC 100%)
 }
 
-.rotateCircle{
+.rotateCircle {
     animation: rotatebg 10s linear infinite;
 }
 
-@keyframes rotatebg{
+@keyframes rotatebg {
     0% {
         transform: rotate(0deg);
     }
-    50%{
+
+    50% {
         transform: rotate(-45deg);
     }
-    100%{
+
+    100% {
         transform: rotate(0deg);
     }
 }
-.rotateCircleClk{
+
+.rotateCircleClk {
     animation: rotatebgclk 5s linear infinite;
 }
 
-@keyframes rotatebgclk{
+@keyframes rotatebgclk {
     0% {
         transform: rotate(0deg);
     }
-    50%{
+
+    50% {
         transform: rotate(20deg);
     }
-    100%{
+
+    100% {
         transform: rotate(0deg);
     }
 }
 
-.boxShadowInput{
-    box-shadow: 0px 3px 2px rgba(200, 200, 200, 1), -5px -5px 10px rgba(255, 255, 255, 1) /* Adjusted box-shadow for white background */
-}
-.custom-placeholder{
-    color: #b7b4b4;
-    
+.boxShadowInput {
+    box-shadow: 0px 3px 2px rgba(200, 200, 200, 1), -5px -5px 10px rgba(255, 255, 255, 1)
+        /* Adjusted box-shadow for white background */
 }
 
-.bgRotate{
+.custom-placeholder {
+    color: #b7b4b4;
+
+}
+
+.bgRotate {
     animation: rotatebgform 10s linear infinite;
 }
-@keyframes rotatebgform{
+
+@keyframes rotatebgform {
     0% {
         transform: rotate(0deg);
-        }
-        50%{
-            transform: rotate(40deg);
-            }
-            100%{
-                transform: rotate(0deg);
-            }
+    }
+
+    50% {
+        transform: rotate(40deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
-.bgRotate2{
+.bgRotate2 {
     animation: rotatebgform2 5s linear infinite;
 }
-@keyframes rotatebgform2{
+
+@keyframes rotatebgform2 {
     0% {
         transform: rotate(-10deg);
-        }
-        50%{
-            transform: rotate(10deg);
-            }
-            100%{
-                transform: rotate(-10deg);
-            }
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
 }
 
 
 .container1 {
     width: 40%;
     margin: 0 auto;
-  }
-  #cards {
+}
+
+#cards {
     list-style: none;
     padding-left: 0;
     display: grid;
@@ -209,48 +236,59 @@ body {
     gap: var(--cardMargin);
     padding-bottom: calc(var(--cards) * var(--cardTopPadding));
     margin-bottom: var(--cardMargin);
-  }
-  #card1 {
+}
+
+#card1 {
     --index: 1;
-  }
-  #card2 {
+}
+
+#card2 {
     --index: 2;
-  }
-  #card3 {
+}
+
+#card3 {
     --index: 3;
-  }
-  #card4 {
+}
+
+#card4 {
     --index: 4;
-  }
-  .card {
+}
+
+.card {
     position: sticky;
     top: 0;
     padding-top: calc(var(--index) * var(--cardTopPadding));
-  }
-  
-  .prize1{
-    box-shadow: 2px 4px 20px  rgb(241, 154, 154, 1),  1px 6px 10px rgb(248, 194, 194, 1);
-  }
-  .prize2{
-    box-shadow:2px 4px 20px rgb(255, 255, 111), 1px 6px 10px 3px rgb(253, 253, 173);}
-  .prize3{
-    box-shadow: 2px 4px 20px rgb(109, 226, 255,1), 1px 6px 10px 3px rgb(186, 246, 246,1);
-  }
-  #card1 .card-body {
-    background-color: white;
-    box-shadow: 2px 4px 20px  rgb(241, 154, 154, 1),  1px 6px 10px rgb(248, 194, 194, 1);
+}
 
-  }
-  #card2 .card-body {
+.prize1 {
+    box-shadow: 2px 4px 20px rgb(241, 154, 154, 1), 1px 6px 10px rgb(248, 194, 194, 1);
+}
+
+.prize2 {
+    box-shadow: 2px 4px 20px rgb(255, 255, 111), 1px 6px 10px 3px rgb(253, 253, 173);
+}
+
+.prize3 {
+    box-shadow: 2px 4px 20px rgb(109, 226, 255, 1), 1px 6px 10px 3px rgb(186, 246, 246, 1);
+}
+
+#card1 .card-body {
     background-color: white;
-    box-shadow:2px 4px 20px rgb(255, 255, 111), 1px 6px 10px 3px rgb(253, 253, 173);
-  }
-  #card3 .card-body {
+    box-shadow: 2px 4px 20px rgb(241, 154, 154, 1), 1px 6px 10px rgb(248, 194, 194, 1);
+
+}
+
+#card2 .card-body {
     background-color: white;
-    box-shadow: 2px 4px 20px rgb(109, 226, 255,1), 1px 6px 10px 3px rgb(186, 246, 246,1);
-  }
-  
-  .card-body {
+    box-shadow: 2px 4px 20px rgb(255, 255, 111), 1px 6px 10px 3px rgb(253, 253, 173);
+}
+
+#card3 .card-body {
+    background-color: white;
+    box-shadow: 2px 4px 20px rgb(109, 226, 255, 1), 1px 6px 10px 3px rgb(186, 246, 246, 1);
+}
+
+.card-body {
     box-sizing: border-box;
     padding: 30px;
     border-radius: 50px;
@@ -260,35 +298,55 @@ body {
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
-  }
+}
 
-  .rooting {
+.rooting {
     --cards: 4;
-    --cardHeight:40vh;
+    --cardHeight: 40vh;
     --cardTopPadding: 1.5em;
     --cardMargin: 2vw;
-  }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .slider-container {
-    display: flex;
-    transition: transform 1s ease-in-out;
-    width: 100%;
-  }
-  .slide {
-    flex: 0 0 95%;
-    max-width: 95%;
-    width: 95%;
-  }
-  .container1 {
-    width: 100%;
-    margin: 0 auto;
-  }
- 
-  
+        display: flex;
+        transition: transform 1s ease-in-out;
+        width: 100%;
+    }
+
+    .slide {
+        flex: 0 0 95%;
+        max-width: 95%;
+        width: 95%;
+    }
+
+    .container1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    @keyframes borderCircle {
+    0% {
+        transform: rotate(0deg) translate(10vw, -5vh) rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg) translate(10vw, -5vh) rotate(-90deg);
+    }
+
+    50% {
+        transform: translate(0, 0) rotate(180deg) translate(10vw, -5vh) rotate(-180deg);
+    }
+
+    75% {
+        transform: translate(0, 0) rotate(270deg) translate(10vw, -5vh) rotate(-270deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(360deg) translate(10vw, -5vh) rotate(-360deg);
+    }
+}
 
 
-  
-  }
-  
- 
+
+
+}

@@ -42,9 +42,9 @@ function Home() {
   return (
     <>
 
-      <div >
+      <div className='backX ' >
         <Header />
-        <div id="Hero" className='backX ' >
+        <div id="Hero" className='' >
           <h1 className=" max-md:hidden lg:block text-6xl text-black text-left text-normal  px-28 mt-16 leading-16 max-md:px-5 max-md:text-[43px] max-md:leading-12">
             Your Startup. Our <br /> Platform. Together, We <br/>Build the  Future. </h1>
 
@@ -55,7 +55,7 @@ function Home() {
 
         </div>
         <section className='flex  max-md:flex-col justify-around items-center'>
-          <img src={Wheel} alt="wheel" />
+          <img src={Wheel} alt="wheel" className='max-md:hidden' />
 
           <div className=' '>
 
