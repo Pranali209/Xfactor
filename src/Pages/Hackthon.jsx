@@ -115,7 +115,7 @@ function Hackthon() {
                     <Heading className="text-left font-semibold text-3xl max-md:text-4xl text-black" as="h1" text="Let’s Talk Big Ideas" />
                     <Heading className="text-left text-lg w-[70%] max-md:w-full max-md:text-base mt-5 text-black" as="p" text="This isn’t just another hackathon. It’s THE hackathon. The X-Factor Hackathon is where the brightest minds solve the biggest challenges—and walk away with life-changing grants" />
                     <Heading className="text-left text-lg  w-[70%] max-md:w-full max-md:text-base mt-5 text-black" as="p" text="Bring your boldest ideas, build something extraordinary, and claim your spot as the next big innovator." />
-                    <img src={Ellipse3} alt='ellipse1' className=' absolute top-10 -right-2.5 w-96 max-md:w-48 bgRotate2' />
+                    <img src={Ellipse3} alt='ellipse1' className=' absolute top-10 -right-20 w-96 max-md:w-48 bgRotate2' />
 
                 </div>
                 <div className='my-32   max-md:w-full'>
@@ -128,11 +128,11 @@ function Hackthon() {
                         <div className='flex justify-between items-center my-16 max-md:w-full  slider-container'
                             style={isMediumScreen ? { transform: `translateX(-${currentIndex * 98}%)` } : {}}>
 
-                            <BoxA className="w-72 max-md:w-full py-14  prize1 max-md:mr-2.5 max-md:py-5 boxShadow slide" htxt=" 🏆1st Place:" ptxt="₹ 50L Grant" etxt="The grand prize for the idea that redefines the rules of innovation."
+                            <BoxA className="w-72 max-md:w-full py-14  prize1 max-md:mr-4 max-md:py-5 boxShadow slide" htxt=" 🏆1st Place:" ptxt="₹ 50L Grant" etxt="The grand prize for the idea that redefines the rules of innovation."
                                 hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" !text-lg mt-10 max-md:mt-5 " />
-                            <BoxA className="w-72 max-md:w-full py-14 prize2 max-md:mr-2.5 max-md:py-5 boxShadow slide" htxt="🥈2nd Place:" ptxt="₹ 30L Grant" etxt="For the solution that’s bold, impactful, and unforgettable."
+                            <BoxA className="w-72 max-md:w-full py-14 prize2 max-md:mr-4 max-md:py-5 boxShadow slide" htxt="🥈2nd Place:" ptxt="₹ 30L Grant" etxt="For the solution that’s bold, impactful, and unforgettable."
                                 hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" mt-10 max-md:mt-5  !text-lg " />
-                            <BoxA className="w-72 max-md:w-full py-16 prize3  max-md:mr-2.5 max-md:py-5 boxShadow slide" htxt="🥉3rd Place:" ptxt="₹ 20L Grant" etxt="Because brilliance deserves recognition, always."
+                            <BoxA className="w-72 max-md:w-full py-16 prize3  max-md:mr-4 max-md:py-5 boxShadow slide" htxt="🥉3rd Place:" ptxt="₹ 20L Grant" etxt="Because brilliance deserves recognition, always."
                                 hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" mt-10 max-md:mt-5  !text-lg" />
 
                         </div>
