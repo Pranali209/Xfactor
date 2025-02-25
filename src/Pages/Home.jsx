@@ -82,23 +82,7 @@ function Home() {
 
           </div>
 
-          <section className=' border-2 border-amber-400'>
-              <div className='mt-20 p-5 max-md:px-10 max-md:pl-44  flex justify-around max-md:justify-between border-2  slider-container'
-                style={isMobile ? { transform: `translateX(-${currentIndex * 60}%)` } : {}}>
-
-
-                {heroBox.map((item) => (
-                  <Box
-                    key={item.id}
-                    id={item.id}
-                    heading={item.title}
-                    txt={item.text}
-                    onClick={() => HandleOnclick(item.id)}
-                  />
-                ))}
-
-              </div>
-            </section>
+          
 
         </section>
 
