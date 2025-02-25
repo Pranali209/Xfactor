@@ -76,7 +76,7 @@ function Home() {
 
           <div className=' '>
 
-            <Heading className="text-4xl mb-5 text-center mx-auto max-md:mt-5 " as="h1" text="Our Program" />
+            <Heading className="text-4xl mb-5 text-center mx-auto max-md:mt-10 " as="h1" text="Our Program" />
 
             <section className=' '>
               <div className='mt-20 p-5 max-md:px-10 max-md:pl-44  flex justify-around max-md:justify-between   slider-container'
