@@ -6,8 +6,10 @@
 
 
 body {
-    font-family: 'inter';
+    font-family: 'Inter';
 }
+
+
 
 .backX {
     position: relative;
@@ -319,6 +321,18 @@ body {
         flex: 0 0 95%;
         max-width: 95%;
         width: 95%;
+    }
+    .slider-container1 {
+        display: flex;
+        transition: transform 1s ease-in-out;
+        width: 80%;
+        border: 2px soild greenyellow
+    }
+
+    .slide1 {
+        flex: 0 0 70%;
+       
+        width: 70%;
     }
 
     .container1 {
