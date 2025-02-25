@@ -9,7 +9,7 @@ function Box({ id, heading, txt, onClick }) {
       max-md:px-5'>
         <h1 className='text-2xl font-semibold'>{heading}</h1>
         <p className='text-[13px] mt-2 max-md:mb-3 hackthon'>{txt}</p>
-        {id == 1 ? (
+        {id == 2 ? (
           <button className={`text-xs newbtnbg text-white px-2 w-36 py-3 cursor-pointer mr-5`}>
             Learn More
             <img src={arrows} className='ml-8 inline-block' />

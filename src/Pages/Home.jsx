@@ -37,13 +37,14 @@ function Home() {
   const heroBox = [
     {
       id: 1,
-      title: 'Acceleration Program (Soon)',
-      text: 'A program built for startups ready to scale, disrupt, and dominate their industries.',
-    }, {
-      id: 2,
       title: 'Hackathon',
       text: 'The ultimate challenge for creators solving real-world problems.',
-    }
+    },
+    {
+      id: 2,
+      title: 'Acceleration Program (Soon)',
+      text: 'A program built for startups ready to scale, disrupt, and dominate their industries.',
+    }, 
   ]
 
   function HandleOnclick(id) {
