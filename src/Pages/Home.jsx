@@ -80,7 +80,7 @@ function Home() {
             <Heading className="text-4xl mb-5 text-center mx-auto max-md:mt-10 " as="h1" text="Our Program" />
 
             <section className=' '>
-              <div className='mt-20 p-5 max-md:px-10 max-md:pl-44  flex justify-around max-md:justify-between   slider-container'
+              <div className='mt-20 p-5 max-md:px-10 max-md:pl-36  flex justify-around max-md:justify-between max-md:items-center  slider-container'
                 style={isMobile ? { transform: `translateX(-${currentIndex * 60}%)` } : {}}>
 
 
