@@ -71,7 +71,7 @@ function Home() {
             their impact, and stand out in a world of mediocrity.</p>
 
         </div>
-        <section className='flex  max-md:flex-col justify-around items-center'>
+        <section className='flex  max-md:flex-col justify-around items-center overflow-hidden'>
           <img src={Wheel} alt="wheel" className='max-md:hidden' />
 
           <div className=' '>
@@ -79,7 +79,10 @@ function Home() {
             <Heading className="text-4xl mb-5 text-center mx-auto max-md:mt-5 " as="h1" text="Our Program" />
 
 
-            <section className='max-md:overflow-hidden'>
+
+          </div>
+
+          <section className=' border-2 border-amber-400'>
               <div className='mt-20 p-5 max-md:px-10 max-md:pl-44  flex justify-around max-md:justify-between border-2  slider-container'
                 style={isMobile ? { transform: `translateX(-${currentIndex * 60}%)` } : {}}>
 
@@ -96,9 +99,6 @@ function Home() {
 
               </div>
             </section>
-          </div>
-
-
 
         </section>
 
