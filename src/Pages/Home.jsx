@@ -49,7 +49,7 @@ function Home() {
 
   function HandleOnclick(id) {
 
-    if (id === 1) {
+    if (id === 2) {
       navigate('/acceration')
     }
     else {
