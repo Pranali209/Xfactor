@@ -22,7 +22,7 @@ function Footer() {
             <ul className="text-sm  ">
              
               <li>
-                <a href="/hackathon" className="hover:text-gray-300">FAQ</a>
+                <Link to="/hackathon/#faqSection" className="hover:text-gray-300">FAQ</Link>
               </li>
               
           
