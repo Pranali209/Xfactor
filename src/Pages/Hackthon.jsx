@@ -183,7 +183,7 @@ function Hackthon() {
                                                     onClick={() => handleIsClicked(head.id)}></div>
                                             </div>
 
-                                            <div class="absolute top-0 -mt-8 text-center max-md:-mt-16 text-xs w-36 max-md:w-14 text-black">{head.title}</div>
+                                            <div class="absolute top-0 -mt-8 text-center max-md:-mt-16 text-xs w-36 max-md:w-16 max-md:text-[10px]  text-black">{head.title}</div>
                                         </div>
                                     </section>{
                                         head.id != 4 && <div class="flex-grow border-t border-black"></div>
