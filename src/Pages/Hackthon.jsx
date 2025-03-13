@@ -134,7 +134,7 @@ function Hackthon() {
                                 hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" !text-lg mt-10 max-md:mt-5 " />
                             <BoxA className="w-72 max-md:w-full py-14 prize2 max-md:mr-4 max-md:py-5 boxShadow slide" htxt="🥈2nd Place:" ptxt="₹ 15L Grant" etxt="For the solution that’s bold, impactful, and unforgettable."
                                 hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" mt-10 max-md:mt-5  !text-lg " />
-                            <BoxA className="w-72 max-md:w-full py-16 prize3  max-md:mr-4 max-md:py-5 boxShadow slide" htxt="🥉3rd Place:" ptxt="₹ 10L Grant" etxt="Because brilliance deserves recognition, always."
+                            <BoxA className="w-72 max-md:w-full py-20 prize3  max-md:mr-4 max-md:py-5 boxShadow slide" htxt="🥉3rd Place:" ptxt="₹ 10L Grant" etxt="Because brilliance deserves recognition, always."
                                 hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" mt-10 max-md:mt-5  !text-lg" />
 
                         </div>
