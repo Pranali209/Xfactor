@@ -24,6 +24,7 @@ import line3 from '../assets/line3.svg'
 import { useNavigate } from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
 import Footer from '../Component/Footer'
+import Header from '../Component/Headers'
 function Hackthon() {
     const navigate = useNavigate()
     
@@ -104,8 +105,9 @@ function Hackthon() {
         navigate('/article')
     }
     return (
-        <div className='py-16 hackthon backGrid  '>
-            <section className='px-24 max-md:px-5'>
+        <div className=' hackthon backGrid  '>
+            <Header/>
+            <section className='px-24 py-14 max-md:px-5'>
 
 
                 <Heading className="text-left font-semibold text-3xl max-md:text-4xl text-black" as="h1" text="Hackathon 1.0 Application (SUMMER) 5/30-8/24" />
@@ -128,11 +130,11 @@ function Hackthon() {
                         <div className='flex justify-between items-center my-16 max-md:w-full  slider-container'
                             style={isMediumScreen ? { transform: `translateX(-${currentIndex * 98}%)` } : {}}>
 
-                            <BoxA className="w-72 max-md:w-full py-14  prize1 max-md:mr-4 max-md:py-5 boxShadow slide" htxt=" 🏆1st Place:" ptxt="₹ 50L Grant" etxt="The grand prize for the idea that redefines the rules of innovation."
+                            <BoxA className="w-72 max-md:w-full py-14  prize1 max-md:mr-4 max-md:py-5 boxShadow slide" htxt=" 🏆1st Place:" ptxt="₹ 25L Grant" etxt="The grand prize for the idea that redefines the rules of innovation."
                                 hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" !text-lg mt-10 max-md:mt-5 " />
-                            <BoxA className="w-72 max-md:w-full py-14 prize2 max-md:mr-4 max-md:py-5 boxShadow slide" htxt="🥈2nd Place:" ptxt="₹ 30L Grant" etxt="For the solution that’s bold, impactful, and unforgettable."
+                            <BoxA className="w-72 max-md:w-full py-14 prize2 max-md:mr-4 max-md:py-5 boxShadow slide" htxt="🥈2nd Place:" ptxt="₹ 15L Grant" etxt="For the solution that’s bold, impactful, and unforgettable."
                                 hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" mt-10 max-md:mt-5  !text-lg " />
-                            <BoxA className="w-72 max-md:w-full py-16 prize3  max-md:mr-4 max-md:py-5 boxShadow slide" htxt="🥉3rd Place:" ptxt="₹ 20L Grant" etxt="Because brilliance deserves recognition, always."
+                            <BoxA className="w-72 max-md:w-full py-16 prize3  max-md:mr-4 max-md:py-5 boxShadow slide" htxt="🥉3rd Place:" ptxt="₹ 10L Grant" etxt="Because brilliance deserves recognition, always."
                                 hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" mt-10 max-md:mt-5  !text-lg" />
 
                         </div>
@@ -269,8 +271,8 @@ function Hackthon() {
                 <div className='flex justify-evenly items-center my-16 max-md:flex-col'>
                     <div className='relative'>
                         <img src={Feedback} alt="feedback" className='absolute -bottom-3.5 -left-1.5 w-16' />
-                        <BoxA className="w-64 h-72 max-md:h-60 !py-8 boxShadow" htxt="" ptxt="“The X-Factor Hackathon didn’t just challenge us—it elevated us. The ₹50L grant transformed our idea into a product.”"
-                            etxt="-Ram"
+                        <BoxA className="w-64 h-72 max-md:h-60 !py-8 boxShadow" htxt="" ptxt="“The X-Factor Hackathon didn’t just challenge us—it elevated us. The ₹25L grant transformed our idea into a product.”"
+                            etxt="-Chandani"
                             eclass="!mt-2" />
                     </div>
 
@@ -291,7 +293,11 @@ function Hackthon() {
             <div className='my-20 flex flex-col justify-center items-center  px-8'>
                 <Heading className="text-center font-medium  text-4xl text-black " as="h1" text="Let’s Build Something Epic Together" />
                 <Heading className="text-center text-lg mt-7 text-black  mx-auto" as="p" text="We believe startups like yours are the key to shaping the future. Are you ready to join the legacy?" />
-                <Button className="mt-12" txt="Apply Now" onClick={handleForm} />
+                
+                <Button
+                 className="mt-12" 
+                 txt="Apply Now" 
+                 onClick={handleForm} />
             </div>
 
           <Footer/>

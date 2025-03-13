@@ -20,7 +20,7 @@ const Header = () => {
       <nav className="flex space-x-4 justify-between items-center">
         <Link
           to="/"
-          className={`text-black hover:text-black font-medium ${
+          className={`text-black hover:text-gray-500 font-medium ${
             activeLink === '/' && 'text-gray-500  underline'
           }`}
         >

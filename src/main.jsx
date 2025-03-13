@@ -8,34 +8,65 @@ import Acceration from './Pages/Acceration.jsx'
 import Hackthon from './Pages/Hackthon.jsx'
 import Form from './Component/form/index.jsx'
 import Article from './Pages/Article.jsx'
+import ScrollToTop from './Component/ScrollToTop/index.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element:<App/>
+    element: (
+      <>
+        <ScrollToTop />
+        <App />
+      </>
+    ),
   },
   {
-    path :'/about',
-    element : <AboutUs/>
-  },{
-    path :'/acceration',
-    element: <Acceration/>
-  },{
-    path :'/hackathon',
-    element: <Hackthon/>
-  },{
-    path :'/form',
-    element : <Form/>
-  },{
-    
-      path :'/article',
-      element : <Article/>
-    }
-  
+    path: '/about',
+    element: (
+      <>
+        <ScrollToTop />
+        <AboutUs />
+      </>
+    )
+  }, {
+    path: '/acceration',
+    element: (
+      <>
+        <ScrollToTop />
+        <Acceration />
+      </>
+    )
+  }, {
+    path: '/hackathon',
+    element: (
+      <>
+        <ScrollToTop />
+        <Hackthon />
+      </>
+    )
+  }, {
+    path: '/form',
+    element: (
+      <>
+        <ScrollToTop />
+        <Form />
+      </>
+    )
+  }, {
+
+    path: '/article',
+    element: (
+      <>
+        <ScrollToTop />
+        <Article />
+      </>
+    )
+  }
+
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-   
+
   </StrictMode>,
 )

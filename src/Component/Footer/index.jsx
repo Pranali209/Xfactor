@@ -32,7 +32,7 @@ function Footer() {
             </ul>
           </div>
           <div className="text-black max-md:mt-9">
-            <Link to='/form' className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+            <Link to='' className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 disabled-link">
               Contact
             </Link>
             <p className="mt-2 text-sm">Payments@X-Factor.capital</p>

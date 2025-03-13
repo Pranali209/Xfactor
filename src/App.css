@@ -210,6 +210,13 @@ body {
     animation: rotatebgform2 5s linear infinite;
 }
 
+.disabled-link{
+    cursor: not-allowed;
+}
+.disabled-link:hover {
+    cursor: not-allowed; 
+    color: #b7b4b4;
+  }
 @keyframes rotatebgform2 {
     0% {
         transform: rotate(-10deg);
