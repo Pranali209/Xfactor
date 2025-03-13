@@ -113,11 +113,11 @@ function Hackthon() {
                 <Heading className="text-left font-semibold text-3xl max-md:text-4xl text-black" as="h1" text="Hackathon 1.0 Application (SUMMER) 5/30-8/24" />
                 <Heading className="text-left text-lg  max-md:text-base mt-8 text-black" as="p" text="Hey, Innovator—Think You’ve Got What It Takes?" />
 
-                <div className='relative my-16 '>
+                <div className='relative my-16 overflow-hidden '>
                     <Heading className="text-left font-semibold text-3xl max-md:text-4xl text-black" as="h1" text="Let’s Talk Big Ideas" />
                     <Heading className="text-left text-lg w-[70%] max-md:w-full max-md:text-base mt-5 text-black" as="p" text="This isn’t just another hackathon. It’s THE hackathon. The X-Factor Hackathon is where the brightest minds solve the biggest challenges—and walk away with life-changing grants" />
                     <Heading className="text-left text-lg  w-[70%] max-md:w-full max-md:text-base mt-5 text-black" as="p" text="Bring your boldest ideas, build something extraordinary, and claim your spot as the next big innovator." />
-                    <img src={Ellipse3} alt='ellipse1' className=' absolute top-10 -right-20 w-96 max-md:w-48 bgRotate2' />
+                    <img src={Ellipse3} alt='ellipse1' className=' absolute top-10 -right-20 w-96 max-md:w-48 max-md:-right-10 bgRotate2' />
 
                 </div>
                 <div className='my-32   max-md:w-full'>
