@@ -130,11 +130,11 @@ function Hackthon() {
                         <div className='flex justify-between items-center my-16 max-md:w-full  slider-container'
                             style={isMediumScreen ? { transform: `translateX(-${currentIndex * 98}%)` } : {}}>
 
-                            <BoxA className="max-md:w-auto max-md:h-72 w-72  py-14  prize1 max-md:mr-4 max-md:py-5 boxShadow slide" htxt=" 🏆1st Place:" ptxt="₹ 25L Grant" etxt="The grand prize for the idea that redefines the rules of innovation."
+                            <BoxA className="max-md:w-auto max-md:h-64 w-72  py-14  prize1 max-md:mr-4 max-md:py-5 boxShadow slide" htxt=" 🏆1st Place:" ptxt="₹ 25L Grant" etxt="The grand prize for the idea that redefines the rules of innovation."
                                 hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" !text-lg mt-10 max-md:mt-5 " />
-                            <BoxA className="max-md:w-auto max-md:h-72 w-72 py-14 prize2 max-md:mr-4 max-md:py-5 boxShadow slide" htxt="🥈2nd Place:" ptxt="₹ 15L Grant" etxt="For the solution that’s bold, impactful, and unforgettable."
+                            <BoxA className="max-md:w-auto max-md:h-64 w-72 py-14 prize2 max-md:mr-4 max-md:py-5 boxShadow slide" htxt="🥈2nd Place:" ptxt="₹ 15L Grant" etxt="For the solution that’s bold, impactful, and unforgettable."
                                 hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" mt-10 max-md:mt-5  !text-lg " />
-                            <BoxA className="max-md:w-auto max-md:h-72 w-72 py-20 prize3  max-md:mr-4 max-md:py-5 boxShadow slide" htxt="🥉3rd Place:" ptxt="₹ 10L Grant" etxt="Because brilliance deserves recognition, always."
+                            <BoxA className="max-md:w-auto max-md:h-64 w-72 py-20 prize3  max-md:mr-4 max-md:py-5 boxShadow slide" htxt="🥉3rd Place:" ptxt="₹ 10L Grant" etxt="Because brilliance deserves recognition, always."
                                 hclass="text-3xl" pclass="font-medium text-2xl !mt-2" eclass=" mt-10 max-md:mt-5  !text-lg" />
 
                         </div>
