@@ -107,7 +107,7 @@ function Hackthon() {
     return (
         <div className=' hackthon backGrid  '>
             <Header/>
-            <section className='px-24 py-10 max-md:px-5'>
+            <section className='px-24 py-5 max-md:px-5'>
 
 
                 <Heading className="text-left font-semibold text-3xl max-md:text-4xl text-black" as="h1" text="Hackathon 1.0 Application (SUMMER) 5/30-8/24" />
